@@ -1,0 +1,152 @@
+#divider {
+  height: 70px;
+  background-color: $dc-primary-color;
+  position: relative;
+
+  .cover_container {
+    width: 210px;
+    position: absolute;
+    transform: translate(0, -100%);
+    top: 75%;
+    left: 23.6%;
+  }
+}
+
+.comic_wrapper,
+.comic_specs_wrapper,
+.cta_wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.comic_wrapper {
+  background-color: $dc-lighter-color;
+  padding: 5rem 6rem;
+
+  .comic_title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: $dc-comic-title-font-color;
+  }
+
+  .description_wrapper {
+    font-weight: 500;
+
+    .price_availability {
+      background-color: #55ba59;
+      color: $dc-lighter-color;
+      border-bottom: 1px solid #357739;
+
+      .price,
+      .availability {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .price {
+        border-right: 1px solid #357739;
+      }
+
+      span {
+        color: #b7fa9a;
+      }
+    }
+  }
+
+  .adv_title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #474a49;
+  }
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 1;
+  background-color: $dc-comic-specs-bg-color;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $dc-comic-title-font-color;
+  border-top: 1px solid #e3e3e3;
+
+  .comic_specs_wrapper {
+    padding: 2rem 6rem 5rem 6rem;
+
+    .art,
+    .write,
+    .series,
+    .price,
+    .sale_date {
+      border-top: 1px solid #e3e3e3;
+    }
+
+    .write,
+    .sale_date {
+      border-bottom: 1px solid #e3e3e3;
+    }
+
+    h5 {
+      font-family: "PT Sans Narrow", sans-serif;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00a9d9;
+    }
+  }
+
+  .cta_wrapper {
+    padding: 0 6rem;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: $dc-light-color;
+    font-size: 0.8rem;
+
+    .digital_comics {
+      border-right: 1px solid #e3e3e3;
+      border-left: 1px solid #e3e3e3;
+    }
+
+    .shop_dc,
+    .shop_locator,
+    .subscriptions {
+      border-right: 1px solid #e3e3e3;
+    }
+
+
+    // Sprites rendering
+    .digital_comics_icon,
+    .shop_dc_icon,
+    .shop_locator_icon,
+    .subscriptions_icon {
+      background-image: url('../../img/cta-icons.png');
+      background-repeat: no-repeat;
+    }
+
+    .digital_comics_icon {
+      width: 37px;
+      height: 37px;
+      background-position: 0px 0px;
+    }
+
+    .shop_dc_icon {
+      width: 37px;
+      height: 37px;
+      background-position: -37px 0px;
+    }
+
+    .shop_locator_icon {
+      width: 23px;
+      height: 37px;
+      background-position: -81px 0px;
+    }
+
+    .subscriptions_icon {
+      width: 37px;
+      height: 37px;
+      background-position: -111px 0px;
+    }
+  }
+
+}

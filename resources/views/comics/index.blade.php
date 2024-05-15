@@ -12,10 +12,10 @@
             <div class="col mt-3">
 
               <a href="{{ route('comics.show', $comic) }}">
-                <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="Cover image of {{ $comic['title'] }}">
+                <img class="img-fluid" src="{{ $comic->thumb }}" alt="Cover image of {{ $comic->title }}">
 
                 <div class="comic_serie mt-3 mb-4">
-                  {{ strtoupper($comic['series']) }}
+                  {{ strtoupper($comic->series) }}
                 </div>
               </a>
 
