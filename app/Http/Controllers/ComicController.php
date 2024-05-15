@@ -12,7 +12,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        return view('comics.index', ['comics' => Comic::orderBy('title')->paginate()]);
     }
 
     /**
@@ -36,7 +36,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        return view('comics.show', compact('comic'));
     }
 
     /**

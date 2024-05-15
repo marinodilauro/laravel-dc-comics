@@ -1,0 +1,68 @@
+#header {
+  font-family: "PT Sans Narrow", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  #header_top {
+    font-size: 0.8rem;
+    background-color: $dc-primary-color;
+
+    a,
+    i {
+      color: $dc-lighter-color;
+    }
+  }
+
+  #navbar {
+    font-weight: bold;
+
+    a {
+      height: 100%;
+      color: $dc-font-dark-color;
+    }
+
+
+
+    i {
+      color: $dc-primary-color
+    }
+
+    .active {
+      color: $dc-primary-color;
+      border-bottom: 2px solid $dc-primary-color;
+    }
+
+    .search {
+      background-color: white;
+
+      height: 50px;
+
+      .search_bar {
+        width: 95%;
+        height: 35px;
+        background-color: white;
+        border-bottom: 2px solid $dc-primary-color;
+
+
+        i {
+          color: black;
+          padding: 0.5rem;
+        }
+
+        input {
+          width: 85%;
+          height: 30px;
+          padding: 0.5rem 0;
+          border: none;
+          outline: none;
+
+          &::placeholder {
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
