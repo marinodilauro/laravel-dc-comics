@@ -4,8 +4,15 @@
   <!-- Comics List -->
   <div id="comics_list">
     <section class="py-4">
+
       <h2 id="page_title">CURRENT SERIES</h2>
+
       <div class="container">
+
+        <a class="btn rounded-0 load_more_btn py-2 mb-3" href="{{ route('comics.create') }}">
+          Add comic
+        </a>
+
         <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6">
 
           @forelse ($comics as $comic)
@@ -15,7 +22,7 @@
                 <img class="img-fluid" src="{{ $comic->thumb }}" alt="Cover image of {{ $comic->title }}">
 
                 <div class="comic_serie mt-3 mb-4">
-                  {{ strtoupper($comic->series) }}
+                  {{ strtoupper($comic->title) }}
                 </div>
               </a>
 

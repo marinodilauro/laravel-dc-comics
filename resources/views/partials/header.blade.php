@@ -27,7 +27,8 @@
 
     <nav class="nav justify-content-center">
       <a class="nav-link {{-- {{ Route::currentRouteName() === 'charact ers' ? 'active' : '' }} --}}" href="{{-- {{ route('characters') }} --}}">CHARACTERS</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'comics' || Route::currentRouteName() === 'comic' ? 'active' : '' }} --}}" href="{{-- {{ route('comics') }} --}}">COMICS</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }} "
+        href="{{ route('comics.index') }} ">COMICS</a>
       <a class="nav-link {{-- {{ Route::currentRouteName() === 'movies'  ? 'active' : '' }} --}}" href="{{-- {{ route('movies') }} --}}">MOVIES</a>
       <a class="nav-link {{-- {{ Route::currentRouteName() === 'tv' ? ' active' : '' }} --}}" href="{{-- {{ route('tv') }} --}}">TV</a>
       <a class="nav-link {{-- {{ Route::currentRouteName() === 'games'  ? 'active' : '' }} --}}" href="{{-- {{ route('games') }} --}}">GAMES</a>
