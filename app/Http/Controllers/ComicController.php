@@ -30,11 +30,12 @@ class ComicController extends Controller
     {
         // dd($request->all());
         $data = $request->all();
-        // TODO: validate user inputs
+
+        /* TODO: validate user inputs */
 
 
-        // Create the resource
-        $comic = new Comic();
+        /* Create the resource */
+        /*         $comic = new Comic();
 
         $comic->title = $data['title'];
         $comic->description = $data['description'];
@@ -43,9 +44,11 @@ class ComicController extends Controller
         $comic->series = $data['series'];
         $comic->sale_date = $data['sale_date'];
 
-        $comic->save();
+        $comic->save(); */
 
-        //pattern POST->redirect->GET
+        Comic::create($data);
+
+        /* Pattern POST->redirect->GET */
         return to_route('comics.index');
     }
 

@@ -25,7 +25,7 @@
       <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
     </div>
 
-    <nav class="nav justify-content-center">
+    <nav class="nav justify-content-center bg-transparent">
       <a class="nav-link {{ Route::currentRouteName() === 'homepage' ? 'active' : '' }}"
         href="{{ route('homepage') }}">HOME</a>
       <a class="nav-link {{-- {{ Route::currentRouteName() === 'characters' ? 'active' : '' }} --}}" href="{{-- {{ route('characters') }} --}}">CHARACTERS</a>

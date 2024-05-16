@@ -3,7 +3,7 @@
 @section('content')
   @include('partials.jumbotron')
 
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2>Comics</h2>
@@ -38,9 +38,15 @@
               <td>{{ $comic->sale_date }}</td>
               <td>
                 <div class="d-flex gap-2">
-                  <a class="btn btn-dark btn-sm" href="{{ route('comics.show', $comic) }}">View</a>
-                  <a class="btn btn-dark btn-sm" href="{{ route('comics.edit', $comic) }}">Edit</a>
-                  <a class="btn btn-danger btn-sm" href="">Delete</a>
+                  <a class="btn btn-dark btn-sm" href="{{ route('comics.show', $comic) }}">
+                    <i class="fa-solid fa-eye fa-sm"></i>
+                  </a>
+                  <a class="btn btn-dark btn-sm" href="{{ route('comics.edit', $comic) }}">
+                    <i class="fa-solid fa-pen-to-square fa-sm"></i>
+                  </a>
+                  <a class="btn btn-danger btn-sm" href="">
+                    <i class="fa-solid fa-trash-can fa-sm"></i>
+                  </a>
                 </div>
               </td>
             @empty
