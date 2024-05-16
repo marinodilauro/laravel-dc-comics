@@ -29,7 +29,6 @@
     @include('partials.header')
 
     <main>
-      <div id="jumbotron"></div>
       @yield('content')
     </main>
 

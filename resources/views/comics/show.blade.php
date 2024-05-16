@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+  @include('partials.jumbotron')
+
   <!-- Comic -->
   <div id="divider">
     <div class="cover_container">
