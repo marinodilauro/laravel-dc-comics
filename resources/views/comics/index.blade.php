@@ -18,6 +18,7 @@
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Image</th>
+            <th scope="col">Type</th>
             <th scope="col">Series</th>
             <th scope="col">Title</th>
             <th scope="col">Description</th>
@@ -31,6 +32,7 @@
             <tr class="">
               <td scope="row">{{ $comic->id }}</td>
               <td><img width="60" src="{{ $comic->thumb }}" alt=""></td>
+              <td>{{ $comic->type }}</td>
               <td>{{ $comic->series }}</td>
               <td>{{ $comic->title }}</td>
               <td>{{ $comic->description }}</td>
