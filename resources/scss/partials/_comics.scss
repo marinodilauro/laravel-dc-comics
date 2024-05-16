@@ -13,4 +13,15 @@
   .modal-header {
     background-color: rgba(210, 30, 30, 0.75);
   }
+
+}
+
+.custom_btn_bg {
+  color: white;
+  background-color: #0282f9;
+
+  &:hover {
+    color: white;
+    background-color: #016ed2;
+  }
 }

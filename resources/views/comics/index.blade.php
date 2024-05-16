@@ -13,7 +13,7 @@
 
       <h2>Comics</h2>
 
-      <a class="btn btn-primary" href="{{ route('comics.create') }}">
+      <a class="btn custom_btn_bg" href="{{ route('comics.create') }}">
         Add
       </a>
     </div>
@@ -47,13 +47,13 @@
               <td>
 
                 {{-- View action --}}
-                <a class="btn badge btn-primary p-1" href="{{ route('comics.show', $comic) }}" title="View">
+                <a class="btn badge custom_btn_bg p-1" href="{{ route('comics.show', $comic) }}" title="View">
                   View
                   <i class="fa-solid fa-eye fa-sm"></i>
                 </a>
 
                 {{-- Edit action --}}
-                <a class="btn badge btn-primary p-1" href="{{ route('comics.edit', $comic) }}" title="Edit">
+                <a class="btn badge custom_btn_bg p-1" href="{{ route('comics.edit', $comic) }}" title="Edit">
                   Edit
                   <i class="fa-solid fa-pen-to-square fa-sm"></i>
                 </a>

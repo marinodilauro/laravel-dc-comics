@@ -12,7 +12,7 @@
         examples below for how you can remix and restyle it to your liking.
       </p>
 
-      <a class="btn btn-primary btn-lg" href="{{ route('comics.index') }}">
+      <a class="btn btn-lg custom_btn_bg" href="{{ route('comics.index') }}">
         Manage Comics
       </a>
 

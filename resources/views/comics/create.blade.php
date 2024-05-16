@@ -97,7 +97,7 @@
 
 
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn custom_btn_bg">
           Create new comic
         </button>
 
