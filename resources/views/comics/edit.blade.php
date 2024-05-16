@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <section class="add_new">
+  <section class="add_new bg-light position-relative z-3">
     <div class="container py-4">
 
       <h1>Edit comic</h1>
@@ -61,7 +61,6 @@
           @enderror
 
         </div>
-
 
         <div class="mb-3">
           <label for="series" class="form-label">Series</label>

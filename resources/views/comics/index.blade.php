@@ -1,3 +1,7 @@
+@php
+  use App\Models\Comic;
+@endphp
+
 @extends('layouts.app')
 
 @section('content')
@@ -6,7 +10,9 @@
   <div class="custom_container pt-4">
 
     <div class="d-flex justify-content-between align-items-center mb-3">
+
       <h2>Comics</h2>
+
       <a class="btn btn-primary" href="{{ route('comics.create') }}">
         Add
       </a>
