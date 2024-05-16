@@ -19,35 +19,22 @@
   </div>
 
   <!-- Header Navbar -->
-  <div id="navbar" class="container d-flex align-items-center justify-content-between py-4">
+  <div id="navbar" class="container d-flex align-items-center justify-content-start py-4">
 
     <div class="logo">
       <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
     </div>
 
     <nav class="nav justify-content-center bg-transparent">
-      <a class="nav-link {{ Route::currentRouteName() === 'homepage' ? 'active' : '' }}"
-        href="{{ route('homepage') }}">HOME</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'characters' ? 'active' : '' }} --}}" href="{{-- {{ route('characters') }} --}}">CHARACTERS</a>
-      <a class="nav-link {{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }} "
-        href="{{ route('comics.index') }} ">COMICS</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'movies'  ? 'active' : '' }} --}}" href="{{-- {{ route('movies') }} --}}">MOVIES</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'tv' ? ' active' : '' }} --}}" href="{{-- {{ route('tv') }} --}}">TV</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'games'  ? 'active' : '' }} --}}" href="{{-- {{ route('games') }} --}}">GAMES</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }} --}}" href="{{-- {{ route('collectibles') }} --}}">COLLECTIBLES</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'videos'  ? 'active' : '' }} --}}" href="{{-- {{ route('videos') }} --}}">VIDEOS</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'fans' ?  'active' : '' }} --}}" href="{{-- {{ route('fans') }} --}}">FANS</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'news' ?  'active' : '' }} --}}" href="{{-- {{ route('news') }} --}}">NEWS</a>
-      <a class="nav-link {{-- {{ Route::currentRouteName() === 'shop' ?  'active' : '' }} --}}" href="{{-- {{ route('shop') }} --}}">SHOP
-        <i class="fa-solid fa-caret-down fa-xs"></i> </a>
-      </ul>
 
-      <div class="search d-flex align-items-center px-4">
-        <div class="search_bar d-flex justify-content-end align-items-center">
-          <input type="search" placeholder="Search">
-          <i class="fa-solid fa-magnifying-glass p-0"></i>
-        </div>
-      </div>
+      <a class="nav-link {{ Route::currentRouteName() === 'homepage' ? 'active' : '' }}"
+        href="{{ route('homepage') }}">HOME
+      </a>
+
+      <a class="nav-link {{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }} "
+        href="{{ route('comics.index') }} ">MANAGE COMICS
+      </a>
+
     </nav>
   </div>
 
