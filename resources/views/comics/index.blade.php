@@ -3,7 +3,7 @@
 @section('content')
   @include('partials.jumbotron')
 
-  <div class="container">
+  <div class="custom_container pt-4">
 
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2>Comics</h2>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="table-responsive">
-      <table class="table table-primary">
+      <table class="table table-secondary">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -23,11 +23,11 @@
             <th scope="col">Title</th>
             <th scope="col">Description</th>
             <th scope="col">Price</th>
-            <th scope="col">Sale date</th>
-            <th scope="col">Actions</th>
+            <th style="width:10%" scope="col">Sale date</th>
+            <th style="width:12%" scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
           @forelse ($comics as $comic)
             <tr class="">
               <td scope="row">{{ $comic->id }}</td>
@@ -41,20 +41,23 @@
               <td>
 
                 {{-- View action --}}
-                <a class="btn btn-dark btn-sm" href="{{ route('comics.show', $comic) }}">
+                <a class="btn badge btn-primary p-1" href="{{ route('comics.show', $comic) }}" title="View">
+                  View
                   <i class="fa-solid fa-eye fa-sm"></i>
                 </a>
 
                 {{-- Edit action --}}
-                <a class="btn btn-dark btn-sm" href="{{ route('comics.edit', $comic) }}">
+                <a class="btn badge btn-primary p-1" href="{{ route('comics.edit', $comic) }}" title="Edit">
+                  Edit
                   <i class="fa-solid fa-pen-to-square fa-sm"></i>
                 </a>
 
                 {{-- Delete action --}}
                 <!-- Modal trigger button -->
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                  data-bs-target="#modalId-{{ $comic->id }}">
+                <button type="button" class="btn badge btn-danger p-1" data-bs-toggle="modal"
+                  data-bs-target="#modalId-{{ $comic->id }}" title="Delete">
                   Delete
+                  <i class="fa-solid fa-trash-can fa-sm"></i>
                 </button>
 
                 <!-- Modal Body -->
@@ -62,11 +65,11 @@
                 <div class="modal fade" id="modalId-{{ $comic->id }}" tabindex="-1" data-bs-backdrop="static"
                   data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId-{{ $comic->id }}"
                   aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
                     <div class="modal-content">
 
                       <div class="modal-header justify-content-center align-items-center">
-                        <h5 class="modal-title text-center" id="modalTitleId">
+                        <h5 class="modal-title text-center text-white" id="modalTitleId">
                           ⚠️ATTENTION⚠️
                           <br>
                           This action is irreversible
@@ -79,8 +82,7 @@
                         Are you sure you want to delete this record?
                       </div>
 
-                      <div class="modal-footer">
-
+                      <div class="d-flex justify-content-end gap-3 p-3">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                           Close
                         </button>
@@ -92,7 +94,6 @@
                             Confirm
                           </button>
                         </form>
-
                       </div>
 
                     </div>
@@ -114,6 +115,5 @@
 
     {{ $comics->links('pagination::bootstrap-5') }}
 
-  </div>
   </div>
 @endsection

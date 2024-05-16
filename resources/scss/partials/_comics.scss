@@ -1,7 +1,16 @@
-.table-responsive,
-.add_new,
-nav {
-  background-color: $dc-comic-specs-bg-color;
-  position: relative;
-  z-index: 9999;
+.custom_container {
+  max-width: 1600px;
+  margin: auto;
+
+  .table-responsive,
+  .add_new,
+  nav {
+    background-color: white;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .modal-header {
+    background-color: rgba(210, 30, 30, 0.75);
+  }
 }
