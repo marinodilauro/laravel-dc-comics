@@ -5,9 +5,25 @@
 
   <!-- Comic -->
   <div id="divider">
+
     <div class="cover_container">
       <img class="img-fluid" src="{{ $comic->thumb }}" alt="Cover image of {{ $comic->title }}">
     </div>
+
+    <div class="navigation_buttons">
+
+      <a class="btn custom_btn_reverse_bg p-1 me-2" href="{{ route('comics.edit', $comic) }}" title="Edit">
+        <i class="fa-solid fa-pen-to-square fa-sm"></i>
+        Edit
+      </a>
+
+      <a class="btn custom_btn_reverse_bg p-1" href="{{ route('comics.index') }}" title="Back">
+        <i class="fa-solid fa-angle-left fa-sm"></i>
+        Back to comics
+      </a>
+
+    </div>
+
   </div>
 
 

@@ -10,6 +10,24 @@
     top: 75%;
     left: 23.6%;
   }
+
+  .navigation_buttons {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 66%;
+
+    .custom_btn_reverse_bg {
+      color: #0282f9;
+      background-color: white;
+
+      &:hover {
+        color: white;
+        border-color: white;
+        background-color: #0282f9;
+      }
+    }
+  }
 }
 
 .comic_wrapper,
