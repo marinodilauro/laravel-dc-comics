@@ -96,10 +96,18 @@
         </div>
 
 
+        <div class="buttons_container">
 
-        <button type="submit" class="btn custom_btn_bg">
-          Create new comic
-        </button>
+          <button type="submit" class="btn custom_btn_bg me-2">
+            Create new comic
+          </button>
+
+          <a class="btn custom_btn_bg" href="{{ route('comics.index') }}" title="Back">
+            <i class="fa-solid fa-angle-left fa-sm"></i>
+            Back to comics
+          </a>
+
+        </div>
 
 
       </form>
