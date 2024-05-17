@@ -3,8 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
-class StoreComicRequest extends FormRequest
+class UpdateComicRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,7 +23,7 @@ class StoreComicRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|min:5|max:100',
+            'title' => ['required', 'min:5', 'max:100', Rule::unique('comics')->ignore($this->comic->id)],
             'description' => 'nullable|max:1000',
             'thumb' => 'required|min:8|max:255',
             'price' => 'nullable|max:10',
