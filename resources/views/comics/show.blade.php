@@ -131,6 +131,18 @@
 
             </div>
 
+            <div class="type d-flex py-2">
+
+              <div class="col-4">
+                Type:
+              </div>
+
+              <div class="col-8 lh-sm">
+                <a href="">{{ strtoupper($comic->type) }}</a>
+              </div>
+
+            </div>
+
             <div class="price d-flex  py-2">
 
               <div class="col-4">
