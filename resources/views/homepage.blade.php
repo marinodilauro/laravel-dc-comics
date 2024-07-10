@@ -6,10 +6,10 @@
 
       <h1 class="display-5 fw-bold text-white">DC Comics CMS</h1>
 
-      <p class="col-md-8 fs-4 text-white">
-        Using a series of utilities, you can create this jumbotron, just
-        like the one in previous versions of Bootstrap. Check out the
-        examples below for how you can remix and restyle it to your liking.
+      <p class="col-md-8 fs-4 text-white mt-4 mb-5">
+        With DC Comics CMs you can manage your database of comics.
+        <br>
+        You can add a new comic book, edit or delete older ones.
       </p>
 
       <a class="btn btn-lg custom_btn_bg" href="{{ route('comics.index') }}">

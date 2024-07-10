@@ -11,7 +11,21 @@
 
     <div class="d-flex justify-content-between align-items-center mb-3">
 
-      <h2>Comics</h2>
+      <div class="d-flex justify-content-center align-items-center gap-3">
+
+        <h2>Comics</h2>
+
+        {{--         <a class="btn badge custom_btn_bg p-1"
+          href="{{ route(view('comics.index', ['comics' => Comic::orderBy('id')->paginate(8)])) }}" title="Order by ID">
+          Order by ID
+        </a>
+
+        <a class="btn badge custom_btn_bg p-1"
+          href="{{ route(view('comics.index', ['comics' => Comic::orderBy('id')->paginate(8)])) }}" title="Order by title">
+          Order by title
+        </a> --}}
+
+      </div>
 
       <a class="btn custom_btn_bg" href="{{ route('comics.create') }}">
         Add
